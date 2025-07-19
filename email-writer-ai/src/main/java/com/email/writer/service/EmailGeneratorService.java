@@ -19,6 +19,7 @@ public class EmailGeneratorService {
     @Value("${gemini.api.key}")
     private String geminiApiKey;
 
+    //webclient is used to the call other apis in our application
     private WebClient webClient;
 
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
